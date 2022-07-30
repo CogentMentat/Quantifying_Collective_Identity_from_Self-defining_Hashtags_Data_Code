@@ -33,6 +33,7 @@ All `.gz` files are gzipped with level 9 compression.  See notebooks for details
 
 ## Script requirements (versions used)
 
+* python (3.10.4)
 * [powerlaw](https://github.com/jeffalstott/powerlaw) (1.5)
 * [python-louvain](https://github.com/taynaud/python-louvain) (0.16)
 * [graph-tool](https://graph-tool.skewed.de/) (2.44 (commit 7edcecc2, Wed Jan 12 10:59:17 2022 -0500))
