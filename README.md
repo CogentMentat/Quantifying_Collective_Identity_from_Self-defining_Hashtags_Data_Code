@@ -7,7 +7,7 @@ Per the Twitter Developer Agreement and Policy, raw tweet and profile data is no
 
 ## Files
 
-All `.gz` files are gzipped with level 9 compression.  See notebooks for details.
+All `.gz` and `.bz2` files are use level 9 compression.  See notebooks for details.
 
 * `QuantifyingCollectiveIdentity_graph_edgelist.txt.gz`: edges and associated hashtags for the graph analyzed in the paper.
 * `QuantifyingCollectiveIdentity_graph_TwitterUserIDs.txt.gz`: The 91,093 Twitter User IDs of the graph analyzed in this work, deemed to be non-bot (see paper).  Current profile data for these users may be harvested through the Twitter API.  Markers for the giant component of the graph and its 2-core are included, but vertices are not tied to specific Twitter IDs.
@@ -15,15 +15,15 @@ All `.gz` files are gzipped with level 9 compression.  See notebooks for details
 * `Louvain_hashtagimportanceout_1stlvl.pkl`: Hashtag importance scores for the Louvain first-level partition.
 * `Louvain_1stlvl_binary_comm_mutinf.pkl`: Coherence scores measured for the Louvain hierarchy.
 * `QuantifyingCollectiveIdentity_nullconspicuousness_precalc.pkl`: Pre-calculated null Louvain conspicuousness scores, used as a notebook example.
-* `Ggiant_2core_GT.gt`: graph-tool representation of the 2-core.
+* `Ggiant_2core_GT.gt.xz`: graph-tool representation of the 2-core.
 * `Ggiant_2core_nx-to-gt_vtxconvdict.pkl'`: Mapping of vertices from original networkx graph to graph-tool graph.
-* `Ggiant_2core_NestedBlockState.pkl`: Hierarchical Stochastic Block Model (SBM) inferred from the 2-core and used in our analysis.
+* `Ggiant_2core_NestedBlockState.pkl.gz`: Hierarchical Stochastic Block Model (SBM) inferred from the 2-core and used in our analysis.
 * `statsperlevel_SBM.pkl`: Comparison table between clustering levels of the SBM and Louvain hierarchies.
 * `SBM_labelimportanceout_perlevel.pkl`: Hashtag importance scores for multiple levels of the SBM partition hierarchy.
 * `SBM_binarycommprobs_bottomlevels.pkl`: Binary cluster probabilities used to calculate coherence for different bottom-levels of the SBM hierarchy, with respect to the designated top level (see paper).
 * `SBM_levelcompcondprobs_bottomlevels.pkl`: Conditional top-level SBM cluster probabilities given clusters at different bottom-levels (see paper).
 * `SBMlevel_Louvain_optimalclusterassignments.pkl`: Optimal cluster matching assignments between clusters at each SBM level and Louvain bottom-level clusters.  Clustering is determined by maximizing overall matched cluster overlap score (see notebooks).
-* `SBM_agglvl_binary_hashtag_pdistsplits_dict.pkl.gz`: Label vocabulary probability distributions for clusters vs. their complements at every SBM level.  Generated in notebook code and used to calculate conspicuousness via Jensen-Shannon Divergence.
+* `SBM_agglvl_binary_hashtag_pdistsplits_dict.pkl.bz2`: Label vocabulary probability distributions for clusters vs. their complements at every SBM level.  Generated in notebook code and used to calculate conspicuousness via Jensen-Shannon Divergence.
 * `QuantifyingCollectiveIdentity_nullconspicuousness_SBM_precalc.pkl`: Pre-calculated null SBM conspicuousness scores, used as a notebook example.
 
 ## Notebooks
