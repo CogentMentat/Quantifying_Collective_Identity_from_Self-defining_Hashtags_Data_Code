@@ -9,7 +9,7 @@ Archived at Zenodo: [![DOI](https://zenodo.org/badge/519398822.svg)](https://zen
 
 ## Files
 
-All `.gz` and `.bz2` files are use level 9 compression.  See notebooks for details.
+All `.gz` and `.bz2` files use level 9 compression.  See notebooks for details.
 
 * `QuantifyingCollectiveIdentity_graph_edgelist.txt.gz`: edges and associated hashtags for the graph analyzed in the paper.
 * `QuantifyingCollectiveIdentity_graph_TwitterUserIDs.txt.gz`: The 91,093 Twitter User IDs of the graph analyzed in this work, deemed to be non-bot (see paper).  Current profile data for these users may be harvested through the Twitter API.  Markers for the giant component of the graph and its 2-core are included, but vertices are not tied to specific Twitter IDs.
