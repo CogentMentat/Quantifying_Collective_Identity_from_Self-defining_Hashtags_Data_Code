@@ -1,5 +1,5 @@
 # Quantifying Collective Identity from Self-defining Hashtags: Data and Code
-Data and code accompanying article [Quantifying Collective Identity Online from Self-defining Hashtags](https://www.researchsquare.com/article/rs-960863/latest) by Alexander T. J. Barron and Johan Bollen.
+Data and code accompanying article [Quantifying Collective Identity Online from Self-defining Hashtags](https://www.nature.com/articles/s41598-022-19181-w) by Alexander T. J. Barron and Johan Bollen.
 
 Measurements and figures can be reproduced from the Jupyter notebooks and the graph edge list included.  Specific results from our analysis are saved in `.pkl` (python [pickle](https://docs.python.org/3/library/pickle.html)) or `.gt` ([graph-tool format](https://graph-tool.skewed.de/static/doc/gt_format.html)) files, which can be loaded in the notebooks.  Alternatively, slightly different results (from random variation in inference, etc.) can be created by running notebook code and saving new file versions.
 
